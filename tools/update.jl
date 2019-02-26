@@ -1,4 +1,4 @@
-import LibGit2: checkout!, clone, tag_list, CloneOptions, GitCommit, GitHash
+import LibGit2: checkout!, clone, peel, tag_list, CloneOptions, GitCommit, GitHash, GitObject, GitTree
 import Pkg: TOML
 
 Packages = Dict()
@@ -29,19 +29,23 @@ for url in readlines("tools/packages.txt")
     )
 
     for tag in tag_list(repo)
-        commit = GitCommit(repo, tag)
-        hash = string(GitHash(commit))
-        checkout!(repo, hash)
+        obj = GitObject(repo, tag)
+        obj_hash = string(GitHash(obj))
+
+        tree = peel(obj)
+        tree_hash = string(GitHash(tree))
+
+        checkout!(repo, obj_hash)
 
         project = TOML.parsefile(joinpath(dir, "Project.toml"))
         version = project["version"]
 
-        @info "$(project["name"]) v$(version) => $(hash)"
+        @info "$(project["name"]) v$(version) => $(tree_hash)"
 
         Deps[version] = project["deps"]
 
         Versions[version] = Dict(
-            "git-tree-sha1" => hash
+            "git-tree-sha1" => string(GitHash(tree_hash))
         )
     end
 
