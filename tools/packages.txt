@@ -1,0 +1,2 @@
+https://github.com/maxmouchet/HDPHMM.jl.git
+https://github.com/maxmouchet/HMMBase.jl.git
