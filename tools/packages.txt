@@ -1,3 +1,5 @@
 https://github.com/maxmouchet/HDPHMM.jl.git
 https://github.com/maxmouchet/HMMBase.jl.git
 git@github.com:maxmouchet/RTTHMM.jl.git
+https://github.com/maxmouchet/PyIP.jl.git
+https://github.com/maxmouchet/InternetMeasurements.jl.git
