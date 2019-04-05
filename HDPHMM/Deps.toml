@@ -1,3 +1,11 @@
+["0.0.6"]
+HMMBase = "b2b3ca75-8444-5ffa-85e6-af70e2b64fe7"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+Hungarian = "e91730f6-4275-51fb-a7a0-7064cfbd3b39"
+ConjugatePriors = "1624bea9-42b1-5fc1-afd3-e96f729c8d6c"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+
 ["0.0.3"]
 HMMBase = "b2b3ca75-8444-5ffa-85e6-af70e2b64fe7"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
