@@ -1,10 +1,4 @@
-["0.0.10"]
-StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
-LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
-StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
-
-["0.0.6"]
+["0.0.8"]
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
@@ -16,13 +10,35 @@ LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 
+["0.0.11"]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+
+["0.0.6"]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+
 ["0.0.7"]
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 
-["0.0.8"]
+["0.0.1"]
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+
+["0.0.13"]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+
+["0.0.12"]
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
@@ -34,22 +50,12 @@ LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 
-["0.0.1"]
+["0.0.10"]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 
 ["0.0.2"]
-Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
-StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
-
-["0.0.11"]
-StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
-LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
-StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
-
-["0.0.12"]
-StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
-LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
