@@ -2,5 +2,4 @@ git@github.com:maxmouchet/HDPHMM.jl.git
 git@github.com:maxmouchet/RTTHMM.jl.git
 https://github.com/maxmouchet/HMMBase.jl.git
 https://github.com/maxmouchet/PyIP.jl.git
-https://github.com/maxmouchet/InternetMeasurements.jl.git
 https://github.com/maxmouchet/ClickHouse.jl.git

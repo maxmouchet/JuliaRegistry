@@ -3,10 +3,6 @@ repo = "https://github.com/maxmouchet/JuliaRegistry.git"
 uuid = "c7f9ddcf-1f9c-4e56-b7b0-525f8cf92dbd"
 description = ""
 
-[packages.f257ca76-8b9a-11e8-0bde-f976b35185a3]
-name = "Hops"
-path = "Hops"
-
 [packages.b2b3ca75-8444-5ffa-85e6-af70e2b64fe7]
 name = "HMMBase"
 path = "HMMBase"
