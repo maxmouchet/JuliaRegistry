@@ -1,6 +1,8 @@
 # JuliaRegistry
 Registry for my own packages.
 
+TODO: Ban HDPHMM v0.0.1 (see #b10a92f)
+
 ```julia
 pkg> registry add https://github.com/maxmouchet/JuliaRegistry.git
 pkg> registry st
