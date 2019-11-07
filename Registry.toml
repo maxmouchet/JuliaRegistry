@@ -3,13 +3,13 @@ repo = "https://github.com/maxmouchet/JuliaRegistry.git"
 uuid = "c7f9ddcf-1f9c-4e56-b7b0-525f8cf92dbd"
 description = ""
 
+[packages.b2df20ec-1dc9-4c70-9a34-3aba712a2ea4]
+name = "Statistikk"
+path = "Statistikk"
+
 [packages.b2b3ca75-8444-5ffa-85e6-af70e2b64fe7]
 name = "HMMBase"
 path = "HMMBase"
-
-[packages.87b67ed6-8c2d-11e8-02b9-dd58cea78357]
-name = "PyIP"
-path = "PyIP"
 
 [packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
 name = "HDPHMM"
