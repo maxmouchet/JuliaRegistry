@@ -40,6 +40,10 @@ for url in readlines("tools/packages.txt")
 
         project = TOML.parsefile(joinpath(dir, "Project.toml"))
         version = project["version"]
+	if match(r"^[\d\.]+$", version) == nothing
+	    @info "Skipping (invalid) version $(version)"
+            continue
+        end
 
         @info "$(project["name"]) v$(version) => $(tree_hash)"
 
