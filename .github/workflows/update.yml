@@ -1,7 +1,8 @@
 name: Update
 
 on:
-  push
+  push:
+    branches: 'master'
   schedule:
     - cron: '0 * * * *'
 
