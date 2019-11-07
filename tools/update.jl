@@ -51,11 +51,10 @@ for url in readlines("tools/packages.txt")
 
     rm(dir, recursive=true)
 
-    # TODO: Sort keys
     mkpath(Package["name"])
-    TOML.print(open(joinpath(Package["name"], "Deps.toml"), "w"), Deps)
-    TOML.print(open(joinpath(Package["name"], "Package.toml"), "w"), Package)
-    TOML.print(open(joinpath(Package["name"], "Versions.toml"), "w"), Versions)
+    TOML.print(open(joinpath(Package["name"], "Deps.toml"), "w"), Deps, sorted = true)
+    TOML.print(open(joinpath(Package["name"], "Package.toml"), "w"), Package, sorted = true)
+    TOML.print(open(joinpath(Package["name"], "Versions.toml"), "w"), Versions, sorted = true)
 end
 
 registry = TOML.parsefile("Registry.toml")
