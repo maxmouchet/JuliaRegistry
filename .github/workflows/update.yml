@@ -24,7 +24,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Update Registry" -a
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Update Registry"
       - name: "Push changes"
         uses: ad-m/github-push-action@master
         with:
