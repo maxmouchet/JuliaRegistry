@@ -5,20 +5,20 @@ description = ""
 
 [packages.b2df20ec-1dc9-4c70-9a34-3aba712a2ea4]
 name = "Statistikk"
-path = "Statistikk"
+path = "packages/Statistikk"
 
 [packages.b2b3ca75-8444-5ffa-85e6-af70e2b64fe7]
 name = "HMMBase"
-path = "HMMBase"
+path = "packages/HMMBase"
 
 [packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
 name = "HDPHMM"
-path = "HDPHMM"
+path = "packages/HDPHMM"
 
 [packages.b8100c8c-14fe-11e9-0588-c112a69d043d]
 name = "RTTHMM"
-path = "RTTHMM"
+path = "packages/RTTHMM"
 
 [packages.212d6d54-436c-11e9-27d8-f17facaf9a93]
 name = "ClickHouse"
-path = "ClickHouse"
+path = "packages/ClickHouse"

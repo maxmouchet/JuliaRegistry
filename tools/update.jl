@@ -2,8 +2,7 @@ import LibGit2: checkout!, clone, peel, tag_list, CloneOptions, GitCommit, GitHa
 import Pkg: TOML
 
 Packages = Dict()
-
-# TODO: Git pull to make sure registry is up to date
+PkgsDir = "packages/"
 
 for url in readlines("tools/packages.txt")
     startswith(url, "#") && continue
@@ -23,9 +22,11 @@ for url in readlines("tools/packages.txt")
         "repo" => url
     )
 
+    pkgpath = joinpath(PkgsDir, Package["name"])
+
     Packages[Package["uuid"]] = Dict(
         "name" => Package["name"],
-        "path" => Package["name"]
+        "path" => pkgpath
     )
 
     for tag in tag_list(repo)
@@ -51,10 +52,11 @@ for url in readlines("tools/packages.txt")
 
     rm(dir, recursive=true)
 
-    mkpath(Package["name"])
-    TOML.print(open(joinpath(Package["name"], "Deps.toml"), "w"), Deps, sorted = true)
-    TOML.print(open(joinpath(Package["name"], "Package.toml"), "w"), Package, sorted = true)
-    TOML.print(open(joinpath(Package["name"], "Versions.toml"), "w"), Versions, sorted = true)
+    mkpath(pkgpath)
+
+    TOML.print(open(joinpath(pkgpath, "Deps.toml"), "w"), Deps, sorted = true)
+    TOML.print(open(joinpath(pkgpath, "Package.toml"), "w"), Package, sorted = true)
+    TOML.print(open(joinpath(pkgpath, "Versions.toml"), "w"), Versions, sorted = true)
 end
 
 registry = TOML.parsefile("Registry.toml")
