@@ -11,10 +11,6 @@ path = "packages/ClickHouse"
 name = "Statistikk"
 path = "packages/Statistikk"
 
-[packages.b2b3ca75-8444-5ffa-85e6-af70e2b64fe7]
-name = "HMMBase"
-path = "packages/HMMBase"
-
 [packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
 name = "HDPHMM"
 path = "packages/HDPHMM"
