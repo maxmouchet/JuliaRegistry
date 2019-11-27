@@ -1,7 +1,7 @@
 git@github.com:maxmouchet/HDPHMM.jl.git
 git@github.com:maxmouchet/RTTHMM.jl.git
-git@github.com:maxmouchet/VHEM-H3M.git
 https://github.com/maxmouchet/ClickHouse.jl.git
 https://github.com/maxmouchet/Statistikk.git
+https://github.com/maxmouchet/VHEM_H3M.jl.git
 #https://github.com/maxmouchet/HMMBase.jl.git
 #https://github.com/maxmouchet/PyIP.jl.git
