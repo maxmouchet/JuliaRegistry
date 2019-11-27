@@ -3,13 +3,13 @@ repo = "https://github.com/maxmouchet/JuliaRegistry.git"
 uuid = "c7f9ddcf-1f9c-4e56-b7b0-525f8cf92dbd"
 description = ""
 
-[packages.212d6d54-436c-11e9-27d8-f17facaf9a93]
-name = "ClickHouse"
-path = "packages/ClickHouse"
-
 [packages.b2df20ec-1dc9-4c70-9a34-3aba712a2ea4]
 name = "Statistikk"
 path = "packages/Statistikk"
+
+[packages.be869012-f1ee-4d1b-ac0c-66b7016f7c90]
+name = "VHEM_H3M"
+path = "packages/VHEM_H3M"
 
 [packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
 name = "HDPHMM"
@@ -19,6 +19,6 @@ path = "packages/HDPHMM"
 name = "RTTHMM"
 path = "packages/RTTHMM"
 
-[packages.be869012-f1ee-4d1b-ac0c-66b7016f7c90]
-name = "VHEM"
-path = "packages/VHEM"
+[packages.212d6d54-436c-11e9-27d8-f17facaf9a93]
+name = "ClickHouse"
+path = "packages/ClickHouse"
