@@ -3,6 +3,7 @@ import Pkg: TOML
 
 Packages = Dict()
 PkgsDir = "packages/"
+ActivePkgs = String[]
 
 for url in readlines("tools/packages.txt")
     startswith(url, "#") && continue
@@ -23,6 +24,7 @@ for url in readlines("tools/packages.txt")
     )
 
     pkgpath = joinpath(PkgsDir, Package["name"])
+    push!(ActivePkgs, Package["name"])
 
     Packages[Package["uuid"]] = Dict(
         "name" => Package["name"],
@@ -40,7 +42,7 @@ for url in readlines("tools/packages.txt")
 
         project = TOML.parsefile(joinpath(dir, "Project.toml"))
         version = project["version"]
-	if match(r"^[\d\.]+$", version) == nothing
+	if match(r"^[\d\.]+$", version) === nothing
 	    @info "Skipping (invalid) version $(version)"
             continue
         end
@@ -54,13 +56,21 @@ for url in readlines("tools/packages.txt")
         )
     end
 
-    rm(dir, recursive=true)
+    rm(dir, recursive = true)
 
     mkpath(pkgpath)
 
     TOML.print(open(joinpath(pkgpath, "Deps.toml"), "w"), Deps, sorted = true)
     TOML.print(open(joinpath(pkgpath, "Package.toml"), "w"), Package, sorted = true)
     TOML.print(open(joinpath(pkgpath, "Versions.toml"), "w"), Versions, sorted = true)
+end
+
+# Cleanup packages not present in packages.txt
+for pkg in readdir(PkgsDir)
+    if !(pkg in ActivePkgs)
+        @info "Removing $pkg"
+        rm(joinpath(PkgsDir, pkg), recursive = true)
+    end
 end
 
 registry = TOML.parsefile("Registry.toml")
