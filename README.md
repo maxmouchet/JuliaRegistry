@@ -12,3 +12,7 @@ pkg> registry st
 ```bash
 julia tools/update.jl
 ```
+
+**TODO**
+- Compat file
+- Cleanup unused packages
