@@ -1,3 +1,8 @@
 ["0.1.0"]
 ConjugatePriors = "1624bea9-42b1-5fc1-afd3-e96f729c8d6c"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+
+["0.1.1"]
+ConjugatePriors = "1624bea9-42b1-5fc1-afd3-e96f729c8d6c"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
