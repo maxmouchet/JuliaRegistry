@@ -1,5 +1,5 @@
 # JuliaRegistry
-Registry for my own packages.
+Registry for my packages not published to the General registry.
 
 ```julia
 pkg> registry add https://github.com/maxmouchet/JuliaRegistry.git
@@ -14,5 +14,4 @@ julia tools/update.jl
 ```
 
 **TODO**
-- Compat file
-- Cleanup unused packages
+- [ ] Compat file
