@@ -12,9 +12,6 @@ jobs:
     
     steps:
       - uses: actions/checkout@v1.0.0
-      - uses: webfactory/ssh-agent@v0.1.1
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - uses: julia-actions/setup-julia@latest
         with:
           version: 1.2.0
