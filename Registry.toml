@@ -11,14 +11,6 @@ path = "packages/Statistikk"
 name = "VHEM_H3M"
 path = "packages/VHEM_H3M"
 
-[packages.d69f1d75-0f53-4bd4-8114-76337d5140b8]
-name = "HDPHMM"
-path = "packages/HDPHMM"
-
-[packages.b8100c8c-14fe-11e9-0588-c112a69d043d]
-name = "RTTHMM"
-path = "packages/RTTHMM"
-
 [packages.212d6d54-436c-11e9-27d8-f17facaf9a93]
 name = "ClickHouse"
 path = "packages/ClickHouse"
