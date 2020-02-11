@@ -1,4 +1,6 @@
 # JuliaRegistry
+![Update](https://github.com/maxmouchet/JuliaRegistry/workflows/Update/badge.svg)
+
 Registry for my packages not published to the General registry.
 
 ```julia
