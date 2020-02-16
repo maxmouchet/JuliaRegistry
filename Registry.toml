@@ -8,8 +8,8 @@ name = "Statistikk"
 path = "packages/Statistikk"
 
 [packages.be869012-f1ee-4d1b-ac0c-66b7016f7c90]
-name = "VHEM_H3M"
-path = "packages/VHEM_H3M"
+name = "VariationalH3M"
+path = "packages/VariationalH3M"
 
 [packages.212d6d54-436c-11e9-27d8-f17facaf9a93]
 name = "ClickHouse"
